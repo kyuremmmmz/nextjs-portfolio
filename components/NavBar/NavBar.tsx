@@ -6,7 +6,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../u
 function NavBar() {
   return (
     <div>
-        <nav className=" flex flex-row items-end justify-between bg-inherit border-b border-gray-300 border-opacity-30 w-full md:bg-inherit md:border-0 px-[96px] overflow-hidden py-5">
+        <nav className=" flex flex-row items-end justify-between bg-inherit border-b border-gray-300 border-opacity-30 w-full md:bg-inherit md:border-0 px-[96px] sm:px-[20px] overflow-hidden py-5">
         <h1 className=' font-bold size-[24px]'>CDBJ</h1>
         <Link href={''}  />
         <Link href={''}/>
