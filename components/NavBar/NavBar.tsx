@@ -27,12 +27,12 @@ function NavBar() {
                 <SheetTitle className=' text-white font-bold'>CDBJ</SheetTitle>
               </SheetHeader>
               <div className=' flex flex-col px-4 gap-5'>
-                <Link href={''} className={path == `/` ? ' w-full bg-inherit hover:bg-blue-300' : ' w-full hover:bg-blue-300'}>Home</Link>
-                <Link href={''} className={path == `/` ? ' w-full bg-inherit hover:bg-blue-300' : ' w-full hover:bg-blue-300'}>About</Link>
-                <Link href={''} className={path == `/` ? ' w-full bg-inherit hover:bg-blue-300' : ' w-full hover:bg-blue-300'}>Skills</Link>
-                <Link href={''} className={path == `/` ? ' w-full bg-inherit hover:bg-blue-300' : ' w-full hover:bg-blue-300'}>Projects</Link>
-                <Link href={''} className={path == `/` ? ' w-full bg-inherit hover:bg-blue-300' : ' w-full hover:bg-blue-300'}>Testimonials</Link>
-                <Link href={''} className={path == `/` ? ' w-full bg-inherit hover:bg-blue-300' : ' w-full hover:bg-blue-300'}>Blogs</Link>
+                <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>Home</Link>
+                <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>About</Link>
+                <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>Skills</Link>
+                <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>Projects</Link>
+                <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>Testimonials</Link>
+                <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>Blogs</Link>
               </div>
             </SheetContent>
           </Sheet>
