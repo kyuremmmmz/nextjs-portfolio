@@ -5,7 +5,9 @@ import img from '../public/arrowAnimation.svg';
 import me from '../public/me.svg';
 import skills from '../public/skillset.svg';
 import Button from "@/components/Buttons/Button";
+import DownloadCv from "./hooks/DownloadCv";
 export default function Home() {
+  const { downLoadCv } = DownloadCv();
   return (
     <div className="flex flex-col md:flex-row px-[20px] md:justify-between overflow-hidden">
       <main className="flex flex-col px-[20px] pl-[20px] justify-center items-center md:flex-row md:gap-8">
@@ -15,28 +17,28 @@ export default function Home() {
             <div className="flex flex-col flex-grow">
               <h1 className="text-center md:text-start text-[40px] md:text-[96px] font-bold">HEY THERE, IT&apos;S</h1>
               <div className="w-full md:w-[700px] min-h-[96px]">
-                <h1 className="text-center md:text-start text-[40px] text-[#00ADB5] md:text-[96px] font-bold">
+                <h1 className="text-center md:text-start text-[30px] text-[#00ADB5] md:text-[96px] font-bold">
                   <TypeAnimation
                     sequence={[
                       'TIAN.DEV',
                       10000,
-                      'FREELANCER',
-                      10000,
-                      'A SOFTWARE DEVELOPER',
-                      10000,
-                      'AN INFO TECH STUDENT',
-                      5000,
                       ''
                     ]}
                     wrapper="span"
                     cursor={true}
                     repeat={Infinity}
-                    style={{ display: 'inline-block' }}
+                    style={{ display: 'inline' }}
                   />
                 </h1>
+                <div className="flex flex-row py-3 lg:gap-8">
+                  <Button componentName={"Hire me"} componentFunction={() => {
+                    console.log('Test');
+                  }} className={"bg-[#00ADB5] rounded-3xl w-[129px] h-[47px] text-center items-center justify-center lg:py-3 cursor-pointer"} />
+                  <Button componentName={"Download CV"} componentFunction={() => {
+                    downLoadCv();
+                  }} className={"bg-[#393E46] rounded-3xl w-[223px] h-[47px] text-center items-center justify-center  lg:py-3 cursor-pointer hover:bg-[#00ADB5] duration-300"} />
+                </div>
               </div>
-              <Button componentName={"Hire me"} componentFunction={() => { console.log('Test');
-              }}/>
             </div>
             <div className="relative w-[350px] h-[350px] rounded-full p-2 flex items-center justify-center flex-shrink-0 md:order-last">
               <div className="absolute inset-0">
@@ -46,10 +48,11 @@ export default function Home() {
                   alt="Background Image"
                 />
                 <Image
-                  className="absolute w-[420px] h-[420px] object-contain rounded-full my-20 mr-16  z-10"
+                  className="absolute h-[320px] w-[320px] my-10 object-contain rounded-full lg:w-[420px] lg:h-[420px] lg:my-20 lg:mr-16  z-10"
                   src={me}
                   alt="Profile Image"
                 />
+                
               </div>
             </div>
           </div>

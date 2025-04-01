@@ -1,4 +1,5 @@
 export type ButtonType = {
     componentName: string,
-    componentFunction?: ()=> void
+    componentFunction?: () => void,
+    className: string
 };
