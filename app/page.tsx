@@ -5,6 +5,7 @@ import me from '../public/me.svg';
 import skills from '../public/skillset.svg';
 import Button from "@/components/Buttons/Button";
 import DownloadCv from "./hooks/DownloadCv";
+import About from "@/components/AboutSection/About";
 
 export default function Home() {
   const { downLoadCv } = DownloadCv();
@@ -64,8 +65,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <About/>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
     </div>
   );
 }
