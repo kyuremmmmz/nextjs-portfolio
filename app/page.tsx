@@ -11,9 +11,9 @@ export default function Home() {
   const { downLoadCv } = DownloadCv();
 
   return (
-    <div className="flex flex-col md:flex-row px-[20px] md:justify-between overflow-hidden">
-      <main className="flex flex-col px-[20px] pl-[20px] justify-center items-center md:flex-row md:gap-8">
-        <div className="flex flex-row md:py-[200px] px-50 w-full">
+    <div className="flex flex-col md:flex-row px-[20px] md:justify-between overflow-hidden ">
+      <main className="flex flex-col px-[20px] pl-[20px] justify-center items-center lg:items-start lg:justify-end lg:flex-col md:gap-8 ">
+        <div className="flex flex-row md:py-[200px] px-50 w-full border-b-2">
           <div className="flex flex-col-reverse justify-center items-center md:flex-row md:items-start md:gap-[100px] md:px-[40px] md:pl-[40px] w-full">
             <div className="flex flex-col flex-grow">
               <h1 className="text-center md:text-start text-[40px] md:text-[96px] font-bold">HEY THERE, IT&apos;S</h1>
