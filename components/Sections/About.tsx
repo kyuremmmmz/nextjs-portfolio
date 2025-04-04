@@ -2,6 +2,7 @@
 import useAOS from '@/app/hooks/useAOS/useAOS'
 import React from 'react'
 import Me from '../Svgs/Me';
+import Bulb from '../Svgs/Bulb';
 
 function About() {
     useAOS();
@@ -9,64 +10,13 @@ function About() {
         <section id="about" className="flex flex-col py-10 items-center lg:flex-row">
             <div data-aos="fade-right" className="flex flex-col px-[20px] lg:px-60">
                 <div className="flex flex-row gap-2 lg:gap-8">
-                    <h1 className="text-center md:text-start text-[40px] md:text-[96px] font-bold">About</h1>
-                    <h1 className="text-center md:text-start text-[40px] text-[#00ADB5] md:text-[96px] font-bold">me</h1>
-                    <svg className=' w-[31px] h-[55px] lg:w-[70px] lg:h-[150px]'  width="31" height="55" viewBox="0 0 31 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.47045 40.588C10.9349 36.1211 10.7895 34.845 10.2275 30.3487C9.91799 27.8726 9.79965 25.4535 9.17327 23.0176C8.05314 18.6615 7.6896 12.7957 11.1969 9.28839C18.0982 2.38711 30.9501 12.2019 27.0587 20.9576C25.5777 24.2899 23.0186 26.7571 21.1696 29.9003C20.4281 31.1609 20.0128 32.5273 19.0491 33.7052C18.1248 34.8348 16.977 36.2408 16.977 37.6434C16.977 38.8283 17.3302 40.3645 16.4923 41.412C15.3347 42.8589 15.7462 42.1148 14.0324 42.1148C12.8543 42.1148 11.117 41.1784 10.1669 40.4183C9.48858 39.8757 9.1248 41.4452 9.1248 39.9336C9.1248 38.6361 9.54245 39.7155 8.68857 39.7155"
-                            stroke="#00ADB5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <path
-                            d="M13.9233 44.7322C11.5908 44.0368 5.13424 42.4837 6.62859 44.405C8.43158 46.7231 9.20267 45.5614 11.415 46.053C12.5464 46.3044 13.6494 49.7963 12.3965 49.87C10.6071 49.9753 9.42049 47.5677 7.598 47.5677C5.93923 47.5677 6.05804 49.7507 7.05271 50.5244C8.3662 51.546 9.87666 50.4478 10.7607 52.0391C12.1576 54.5536 8.34174 54.1445 7.25871 53.5537C6.16757 52.9586 5.12948 52.0292 4.32626 51.4938"
-                            stroke="#00ADB5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <path
-                            d="M8.47046 39.8791C8.50013 40.069 8.53101 41.3514 9.04301 41.3514C9.31869 41.3514 9.4455 41.1842 9.69736 41.3241C9.99357 41.4887 10.2714 41.876 10.5547 42.1027C10.8043 42.3024 11.5453 42.2777 11.6877 42.5268C11.9202 42.9337 12.3922 43.1564 12.8328 43.2054C13.404 43.2688 13.6152 43.5556 14.2233 43.4204C14.4091 43.3791 14.4279 43.2599 14.6019 43.2599C14.8707 43.2599 14.9867 43.3884 15.1896 43.1629C15.4142 42.9134 15.7812 42.7965 15.8894 42.4177C16.0366 41.9027 16.576 41.6317 15.7773 41.9512"
-                            stroke="#00ADB5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <path
-                            d="M18.9945 18.2857C18.0189 18.2909 17.2126 18.3538 16.88 19.3884C16.6538 20.0923 16.6498 20.784 16.6498 21.515C16.6498 22.2256 17.086 22.797 17.086 23.4659C17.086 24.3501 16.3789 24.2054 15.7804 24.4747C15.215 24.7291 14.8054 24.9416 14.4989 25.5107C14.1954 26.0743 14.4248 27.1641 14.4656 27.7767C14.5007 28.3039 14.7515 29.4243 14.3868 29.87C14.1887 30.1122 13.106 30.4861 13.8143 29.9548"
-                            stroke="#00ADB5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <path
-                            d="M27.2284 28.1554C28.0096 28.6744 28.8058 29.1093 29.6792 29.4368C30.0453 29.5741 30.5275 29.8191 30.4456 29.246"
-                            stroke="#00ADB5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <path
-                            d="M22.7025 5.9076C23.8353 5.70853 24.8172 5.51672 25.8409 5.00484C26.3201 4.76524 26.7815 4.47725 27.2829 4.28385C27.8788 4.05402 27.891 4.12399 27.2284 3.72644"
-                            stroke="#00ADB5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <path
-                            d="M12.8328 1C12.6674 2.15732 12.7221 2.85047 13.1902 3.89912C13.4426 4.46444 13.6561 5.17896 13.781 5.78945C13.824 5.99969 13.8479 6.11936 13.99 6.27718C14.0432 6.33626 13.8481 5.63396 13.8143 5.5259"
-                            stroke="#00ADB5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <path
-                            d="M4.48985 5.63495C4.85184 6.84017 5.3678 7.99627 5.67736 9.20356C5.83398 9.81436 5.73606 9.85148 5.47137 9.23385"
-                            stroke="#00ADB5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <path
-                            d="M1 14.3051C2.23889 15.3773 3.25491 16.7083 4.2172 18.0251C4.3378 18.1902 4.47723 18.2488 4.61102 18.3826C4.91498 18.6866 4.39027 18 4.32626 17.904"
-                            stroke="#00ADB5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    </svg>
+                    <div>
+                        <div className='flex flex-row gap-2 lg:gap-8'>
+                            <h1 className="text-center md:text-start text-[40px] md:text-[96px] font-bold">About</h1>
+                            <h1 className="text-center md:text-start text-[40px] text-[#00ADB5] md:text-[96px] font-bold">me</h1>
+                        </div>
+                    </div>
+                    <Bulb/>
                 </div>
                 <p className="inline-block w-full md:max-w-2xl md:line-clamp-7 overflow-hidden text-ellipsis">
                     Hi, I’m Christian David Jasmin, a passionate web developer specializing in crafting high-quality websites. I work with powerful JavaScript frameworks like Next.js, React.js, and Express.js, alongside native coding, to bring ideas to life. With 1 year and 4 months of freelancing experience, I’ve had the privilege of helping clients build fast, responsive, and professional websites tailored to their unique needs.
