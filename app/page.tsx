@@ -1,6 +1,6 @@
 "use client";
-import About from "@/components/AboutSection/About";
-import HomeSection from "@/components/HomeSection/Home";
+import About from "@/components/Sections/About";
+import HomeSection from "@/components/Sections/Home";
 import 'aos/dist/aos.css';
 export default function Home() {
   return (
