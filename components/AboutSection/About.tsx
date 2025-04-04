@@ -1,9 +1,12 @@
+'use client'
+import useAOS from '@/app/hooks/useAOS/useAOS'
 import React from 'react'
 
 function About() {
+  useAOS();
   return (
       <section id='#about' className='flex flex-col py-10'>
-          <div className=' flex flex-col px-60 '>
+          <div data-aos="fade-right" className=' flex flex-col px-60 '>
               <div className='flex flex-row gap-2 lg:gap-8'>
                   <h1 className="text-center md:text-start text-[40px] md:text-[96px] font-bold">About</h1>
                   <h1 className="text-center md:text-start text-[40px] text-[#00ADB5] md:text-[96px] font-bold">me</h1>
