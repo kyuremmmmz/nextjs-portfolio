@@ -8,12 +8,11 @@ import { usePathname } from 'next/navigation'
 function NavBar() {
   const path = usePathname();
   return (
-    <div>
-        <nav className=" flex flex-row items-end justify-between bg-inherit border-b border-gray-300 border-opacity-30 w-full md:bg-inherit  px-[20px] lg:px-[296px] sm:px-[20px] overflow-hidden py-5">
+    <nav className="sticky top-0 z-50 flex flex-row items-center justify-between bg-inherit border-b border-gray-300 border-opacity-30 w-full px-5 py-5 md:px-20 lg:px-[296px]">
         <h1 className=' font-bold size-[24px]'>CDBJ</h1>
         <div className='hidden sm:flex flex-row gap-8'>
           <Link href={''} className={path == `/` ? '' : ''}>Home</Link>
-          <Link href={''} className={path == `/` ? '' : ''}>About</Link>
+          <Link href={'#about'} className={path == `/` ? '' : ''}>About</Link>
           <Link href={''} className={path == `/` ? '' : ''}>Skills</Link>
           <Link href={''} className={path == `/` ? '' : ''}>Projects</Link>
           <Link href={''} className={path == `/` ? '' : ''}>Testimonials</Link>
@@ -28,7 +27,7 @@ function NavBar() {
               </SheetHeader>
               <div className=' flex flex-col px-4 gap-5'>
                 <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>Home</Link>
-                <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>About</Link>
+                <Link href={'#about'} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>About</Link>
                 <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>Skills</Link>
                 <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>Projects</Link>
                 <Link href={''} className={`w-full py-2 text-left hover:bg-black hover:text-white rounded-md transition-colors duration-200 ${path === '/' ? ' text-white' : 'text-gray-200'}`}>Testimonials</Link>
@@ -38,7 +37,6 @@ function NavBar() {
           </Sheet>
         </div>
       </nav>
-    </div>
   )
 }
 
