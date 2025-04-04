@@ -1,6 +1,7 @@
 "use client";
 import About from "@/components/Sections/About";
 import HomeSection from "@/components/Sections/Home";
+import Skills from "@/components/Sections/Skills";
 import 'aos/dist/aos.css';
 export default function Home() {
   return (
@@ -12,8 +13,12 @@ export default function Home() {
         <div className=" w-full border-b-2 border-white ">
           {/* SECTION BORDER */}
         </div>
-        <About/>
+        <About />
+        <div className=" w-full border-b-2 border-white ">
+          {/* SECTION BORDER */}
+        </div>
       </main>
+      <Skills />
     </div>
   );
 }
