@@ -5,6 +5,7 @@ import Dog from "@/public/Collar.png";
 import TSWS from "@/public/TSWS.jpg";
 import TravelGo from "@/public/TravelGO.png"
 import Github from "@/public/Git.jpg"
+import ComingSoon from "@/public/ComingSoon.jpg";
 import {
     faPython,
     faJs,
@@ -15,6 +16,7 @@ import {
     faReact,
     faNodeJs,
     faAndroid,
+    faFlutter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faMicrochip, faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -25,7 +27,7 @@ export const ProjectsKo: ProjectType[] = [
             "A platform for teachers and students to connect, share resources, and enhance the learning experience in specific block.",
         image: Github,
         link: "",
-        github: "https://github.com/yourusername/teach-tech",
+        github: "https://github.com/kyuremmmmmz/teach-tech",
         technologies: [
             { name: "Python", icon: faPython },
             { name: "Tkinter", icon: faPython },
@@ -41,7 +43,7 @@ export const ProjectsKo: ProjectType[] = [
             "A travel planning application that helps users find and book travel accommodations, activities, and itineraries.",
         image: Eduportal,
         link: "",
-        github: "https://github.com/yourusername/travel-go-v1",
+        github: "https://github.com/kyuremmmmmz/travel-go-v1",
         technologies: [
             { name: "PHP", icon: faPhp },
             { name: "MySQL", icon: faDatabase },
@@ -60,9 +62,9 @@ export const ProjectsKo: ProjectType[] = [
             "An improved version of the Travel Go application, optimized for mobile devices with enhanced user experience.",
         image: TravelGo,
         link: "",
-        github: "https://github.com/yourusername/travel-go-mobile-v2",
+        github: "https://github.com/kyuremmmmmz/travel-go-mobile-v2",
         technologies: [
-            { name: "Flutter", icon: faReact },
+            { name: "Flutter", icon: faFlutter },
             { name: "Dart", icon: faJs },
             { name: "Supabase", icon: faDatabase },
             { name: "Google Maps API", icon: faDatabase },
@@ -80,7 +82,7 @@ export const ProjectsKo: ProjectType[] = [
             "A wellness spa website that provides information about services, pricing, and booking options.",
         image: TSWS,
         link: "",
-        github: "https://github.com/yourusername/traditions-wellness-spa",
+        github: "https://github.com/kyuremmmmmz/traditions-wellness-spa",
         technologies: [
             { name: "HTML & CSS", icon: faHtml5 },
             { name: "JavaScript", icon: faJs },
@@ -97,10 +99,10 @@ export const ProjectsKo: ProjectType[] = [
     {
         title: "Edu Portal",
         description:
-            "An educational portal for students to access resources, assignments, and communicate with teachers.",
+            "An educational portal for students to access resources, assignments, and communicate with teachers. Unfortunately the github repository still in private",
         image: Eduportal,
         link: "",
-        github: "https://github.com/yourusername/edu-portal",
+        github: "https://github.com/kyuremmmmmz/edu-portal",
         technologies: [
             { name: "JAVA", icon: faJs },
             { name: "MySQL", icon: faDatabase },
@@ -138,7 +140,19 @@ export const ProjectsKo: ProjectType[] = [
             { name: "ESP 32 C3", icon: faMicrochip },
             { name: "Firebase", icon: faDatabase },
             { name: "Arduino IDE", icon: faMicrochip },
-            { name: "Flutter & Dart", icon: faReact },
+            { name: "Flutter & Dart", icon: faFlutter },
+        ],
+        year: "",
+        category: "",
+    },
+    {
+        title: "Coming Soon",
+        description:
+            "There will be more projects coming here soon...",
+        image: ComingSoon,
+        link: "",
+        github: "https://github.com/yourusername/dog-collar",
+        technologies: [
         ],
         year: "",
         category: "",

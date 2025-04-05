@@ -1,17 +1,22 @@
+'use client'
 import React from 'react'
 import { ProjectsKo } from '@/types/Projects'
 import Image from 'next/image';
 import Header from '../Header/Header';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from 'next/navigation';
 
 function Projects() {
     const projects = ProjectsKo;
+    const router = useRouter();
   return (
       <section id="about" className="flex flex-col py-10 px-60 items-center justify-center lg:flex-col lg:items-center lg:justify-center lg:py-16">
           <Header title="My" title2="Projects"/>
           <div className=' grid grid-cols-1 lg:grid-cols-2 lg:px-4 lg:items-center  lg:gap-11 lg:justify-center'>
               {projects.map((project, index) => (
-                  <div key={index} className=' bg-[#1a202c]   overflow-hidden h-full w-full rounded-3xl'>
+                  <div onClick={() => {
+                      router.push(project.github);
+                  }} key={index} className=' bg-[#1a202c]   overflow-hidden h-full w-full rounded-3xl'>
                       <div className='flex flex-col gap-2 lg:gap-8'>
                           <div className='flex flex-col gap-2 lg:gap-8'>
                               <div className=' w-full h-full overflow-hidden'>
