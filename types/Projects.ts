@@ -17,6 +17,7 @@ import {
     faNodeJs,
     faAndroid,
     faFlutter,
+    faDartLang
 } from "@fortawesome/free-brands-svg-icons";
 import { faMicrochip, faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -65,7 +66,7 @@ export const ProjectsKo: ProjectType[] = [
         github: "https://github.com/kyuremmmmz/travel-go-mobile-version",
         technologies: [
             { name: "Flutter", icon: faFlutter },
-            { name: "Dart", icon: faJs },
+            { name: "Dart", icon: faDartLang },
             { name: "Supabase", icon: faDatabase },
             { name: "Google Maps API", icon: faDatabase },
             { name: "React JS", icon: faReact },
