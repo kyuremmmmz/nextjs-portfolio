@@ -6,6 +6,7 @@ import TSWS from "@/public/TSWS.jpg";
 import TravelGo from "@/public/TravelGO.png"
 import Github from "@/public/Git.jpg"
 import ComingSoon from "@/public/ComingSoon.jpg";
+import Travel from "@/public/Trave.jpg";
 import {
     faPython,
     faJs,
@@ -42,7 +43,7 @@ export const ProjectsKo: ProjectType[] = [
         title: "Travel Go V1",
         description:
             "A travel planning application that helps users find and book travel accommodations, activities, and itineraries.",
-        image: Eduportal,
+        image: Travel,
         link: "",
         github: "https://github.com/kyuremmmmz/Travel-Go",
         technologies: [
