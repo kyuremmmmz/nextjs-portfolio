@@ -27,7 +27,7 @@ export const ProjectsKo: ProjectType[] = [
             "A platform for teachers and students to connect, share resources, and enhance the learning experience in specific block.",
         image: Github,
         link: "",
-        github: "https://github.com/kyuremmmmmz/teach-tech",
+        github: "https://github.com/kyuremmmmz/BSIT1-11-1stSem-project-Teach-Tech-Recording-System-Portal-",
         technologies: [
             { name: "Python", icon: faPython },
             { name: "Tkinter", icon: faPython },
@@ -43,7 +43,7 @@ export const ProjectsKo: ProjectType[] = [
             "A travel planning application that helps users find and book travel accommodations, activities, and itineraries.",
         image: Eduportal,
         link: "",
-        github: "https://github.com/kyuremmmmmz/travel-go-v1",
+        github: "https://github.com/kyuremmmmz/Travel-Go",
         technologies: [
             { name: "PHP", icon: faPhp },
             { name: "MySQL", icon: faDatabase },
@@ -62,7 +62,7 @@ export const ProjectsKo: ProjectType[] = [
             "An improved version of the Travel Go application, optimized for mobile devices with enhanced user experience.",
         image: TravelGo,
         link: "",
-        github: "https://github.com/kyuremmmmmz/travel-go-mobile-v2",
+        github: "https://github.com/kyuremmmmz/travel-go-mobile-version",
         technologies: [
             { name: "Flutter", icon: faFlutter },
             { name: "Dart", icon: faJs },
@@ -82,7 +82,7 @@ export const ProjectsKo: ProjectType[] = [
             "A wellness spa website that provides information about services, pricing, and booking options.",
         image: TSWS,
         link: "",
-        github: "https://github.com/kyuremmmmmz/traditions-wellness-spa",
+        github: "https://github.com/kyuremmmmz/traditions_wellness_spa_project",
         technologies: [
             { name: "HTML & CSS", icon: faHtml5 },
             { name: "JavaScript", icon: faJs },
@@ -102,7 +102,7 @@ export const ProjectsKo: ProjectType[] = [
             "An educational portal for students to access resources, assignments, and communicate with teachers. Unfortunately the github repository still in private",
         image: Eduportal,
         link: "",
-        github: "https://github.com/kyuremmmmmz/edu-portal",
+        github: "https://guthib.com/?fbclid=IwY2xjawHcmPlleHRuA2FlbQIxMAABHdcndKfOfHlo5eLvPHK7tsk8K2u5OcCav9OD7KH-Ij6eqOOfq8g-1n5sSw_aem_5HT411-q8mDKHr4vLT_p3w",
         technologies: [
             { name: "JAVA", icon: faJs },
             { name: "MySQL", icon: faDatabase },
@@ -117,7 +117,7 @@ export const ProjectsKo: ProjectType[] = [
             "A system to manage game information, including player profiles, game statistics, and leaderboards.",
         image: Gis,
         link: "",
-        github: "https://github.com/yourusername/game-info-system",
+        github: "https://github.com/kyuremmmmz/GIS",
         technologies: [
             { name: "Laravel", icon: faPhp },
             { name: "PHP", icon: faPhp },
@@ -135,7 +135,7 @@ export const ProjectsKo: ProjectType[] = [
             "A smart dog collar application that tracks the dog's location and health metrics like bpm and heat rate using ESP 32 c3.",
         image: Dog,
         link: "",
-        github: "https://github.com/yourusername/dog-collar",
+        github: "https://github.com/hoophop/smart-collar",
         technologies: [
             { name: "ESP 32 C3", icon: faMicrochip },
             { name: "Firebase", icon: faDatabase },
@@ -151,7 +151,7 @@ export const ProjectsKo: ProjectType[] = [
             "There will be more projects coming here soon...",
         image: ComingSoon,
         link: "",
-        github: "https://github.com/yourusername/dog-collar",
+        github: "https://guthib.com/?fbclid=IwY2xjawHcmPlleHRuA2FlbQIxMAABHdcndKfOfHlo5eLvPHK7tsk8K2u5OcCav9OD7KH-Ij6eqOOfq8g-1n5sSw_aem_5HT411-q8mDKHr4vLT_p3w",
         technologies: [
         ],
         year: "",
