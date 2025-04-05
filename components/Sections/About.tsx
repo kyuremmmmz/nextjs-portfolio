@@ -4,7 +4,8 @@ import React from 'react'
 import Me from '../Svgs/Me';
 import Bulb from '../Svgs/Bulb';
 import Music from '../Svgs/Music';
-import NarrowArrow from '../Svgs/NarrowArrow';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faGithub, faGoogle, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function About() {
     useAOS();
@@ -24,8 +25,12 @@ function About() {
                 <p className="inline-block w-full md:max-w-2xl md:line-clamp-7 overflow-hidden text-ellipsis">
                     Hi, I’m Christian David Jasmin, a passionate web developer specializing in crafting high-quality websites. I work with powerful JavaScript frameworks like Next.js, React.js, and Express.js, alongside native coding, to bring ideas to life. With 1 year and 4 months of freelancing experience, I’ve had the privilege of helping clients build fast, responsive, and professional websites tailored to their unique needs.
                 </p>
-                <div className='flex justify-end lg:py-[65px] lg:justify-center'>
-                    <NarrowArrow />
+                <div className='flex flex-row justify-start py-[10px] gap-4 lg:py-[25px] lg:gap-2 lg:justify-start'>
+                    <FontAwesomeIcon icon={faGithub} className='' />
+                    <FontAwesomeIcon icon={faLinkedin} className='' />
+                    <FontAwesomeIcon icon={faInstagram} className='' />
+                    <FontAwesomeIcon icon={faFacebook} className='' />
+                    <FontAwesomeIcon icon={faGoogle} className='' />
                 </div>
             </div>
             <div>
