@@ -1,32 +1,25 @@
 import { google } from "googleapis";
-import keys from "../keys.json";
-import { NextResponse } from "next/server";
+import key from '../keys.json';
+export async function getGoogleSheetsData(range: string) {
+    const auth = await google.auth.getClient({
+        projectId: key.project_id,
+        credentials: {
+            type: key.type,
+            private_key: key.private_key,
+            client_email: key.client_email,
+            client_id: key.client_id,
+            token_url: "https://oauth2.googleapis.com/token",
+            universe_domain: "googleapis.com",
+        },
+        scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
+    });
 
-export default function handler() {
-    try {
-        const client = new google.auth.JWT(
-            keys.client_email, '', keys.private_key, ['https://www.googleapis.com/auth/spreadsheets']
-        );
+    const sheets = google.sheets({ version: "v4", auth });
 
-        client.authorize(async function (err) {
-            if (err) {
-                return NextResponse.json({ error: true });
-            }
+    const data = await sheets.spreadsheets.values.get({
+        spreadsheetId: "1SQOFOEk3JSeYFCFp8714KM6LgEhd3CdR29hwDpTtPf0",
+        range: range,
+    });
 
-            const gsapi = google.sheets({ version: 'v4', auth: client });
-
-            const opt = {
-                spreadsheetId: process.env.SHEET_ID,
-                range: 'Sheet1!A2:A'
-            };
-
-            const data = await gsapi.spreadsheets.values.get(opt);
-            return NextResponse.json({
-                error: false,
-                data: data.data.values
-            });
-        });
-    } catch (e) {
-        return NextResponse.json({ error: true, message: e });
-    }
+    return data.data.values;
 }

@@ -6,9 +6,11 @@ import Header from '../Header/Header';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from 'next/navigation';
 
-function Projects() {
+export default function Projects() {
     const projects = ProjectsKo;
-    const router = useRouter();
+    const router =  useRouter();
+    
+    
   return (
       <section id="about" className="flex flex-col py-10 px-[10px] lg:px-60 md:px-[200px] items-center justify-center lg:flex-col lg:items-center lg:justify-center lg:py-16">
           <Header title="My" title2="Projects"/>
@@ -42,4 +44,3 @@ function Projects() {
   )
 }
 
-export default Projects
