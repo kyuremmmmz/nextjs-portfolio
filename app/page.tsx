@@ -3,6 +3,7 @@ import About from "@/components/Sections/About";
 import HomeSection from "@/components/Sections/Home";
 import Projects from "@/components/Sections/Projects";
 import Skills from "@/components/Sections/Skills";
+import Testimonials from "@/components/Sections/Testimonials";
 import 'aos/dist/aos.css';
 export default function Home() {
   return (
@@ -24,6 +25,10 @@ export default function Home() {
         {/* SECTION BORDER */}
       </div>
       <Projects />
+      <div className=" w-full border-b-2 border-white ">
+        {/* SECTION BORDER */}
+      </div>
+      <Testimonials/>
     </div>
   );
 }
