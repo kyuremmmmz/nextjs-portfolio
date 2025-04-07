@@ -12,11 +12,11 @@ function NavBar() {
         <h1 className=' font-bold size-[24px]'>CDBJ</h1>
         <div className='hidden sm:flex flex-row gap-8'>
           <Link href={''} className={path == `/` ? '' : ''}>Home</Link>
-          <Link href={'#about'} className={path == `/` ? '' : ''}>About</Link>
+        <Link href={'#about'} className={` ${path == `/#about` ? 'hover:border-b-2 border-amber-50 duration-300' : 'border-b-2 border-amber-50'}`}>About</Link>
           <Link href={''} className={path == `/` ? '' : ''}>Skills</Link>
           <Link href={''} className={path == `/` ? '' : ''}>Projects</Link>
           <Link href={''} className={path == `/` ? '' : ''}>Testimonials</Link>
-          <Link href={''} className={path == `/` ? '' : ''}>Blogs</Link>
+          <Link href={''} className={path == `/` ? '' : ''}>Contact</Link>
         </div>
         <div className='lg:hidden'>
           <Sheet>
