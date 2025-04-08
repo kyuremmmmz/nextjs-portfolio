@@ -10,8 +10,8 @@ function Header({title, title2}: HeaderType) {
                       <div className="flex flex-col gap-2 lg:gap-8">
                           <Music />
                           <div className='flex flex-row gap-2 lg:gap-8 lg:pb-20'>
-                              <h1 className="text-center md:text-start text-[40px] md:text-[96px] font-bold">{title}</h1>
-                              <h1 className="text-center md:text-start text-[40px] text-[#00ADB5] md:text-[96px] font-bold">{ title2 }</h1>
+                              <h1 className="text-center  md:text-start text-[38px] md:text-[96px] font-bold">{title}</h1>
+                              <h1 className="text-center md:text-start text-[38px] text-[#00ADB5] md:text-[96px] font-bold">{ title2 }</h1>
                               <Bulb />
                           </div>
                       </div>

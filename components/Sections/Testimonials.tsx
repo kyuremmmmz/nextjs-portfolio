@@ -31,7 +31,7 @@ export default function Testimonials() {
                     return (
                         <div
                             key={index}
-                            className="bg-[#1a202c] overflow-hidden cursor-pointer lg:p-10 hover:shadow-lg duration-300 shadow-blue-400 h-full w-full rounded-3xl"
+                            className="bg-[#1a202c] overflow-hidden p-10 cursor-pointer lg:p-10 hover:shadow-lg duration-300 shadow-blue-400 h-full w-full rounded-3xl"
                         >
                             <div className="flex flex-col gap-2 lg:gap-8">
                                 <div className="flex flex-col gap-2 lg:gap-8">
