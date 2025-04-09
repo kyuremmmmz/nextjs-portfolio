@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../Header/Header'
 
 function GetIntouch() {
   return (
-    <div>GetIntouch</div>
+    <div>
+      <Header title={'Contact'} title2={''} />
+    </div>
   )
 }
 

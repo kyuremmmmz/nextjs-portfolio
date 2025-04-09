@@ -20,7 +20,7 @@ export default function Testimonials() {
     };
 
     return (
-        <div className="flex flex-col py-10 px-[10px] lg:px-60 md:px-[200px] items-center justify-center lg:flex-col lg:items-center lg:justify-center lg:py-16">
+        <div id="testimonials" className="flex flex-col py-10 px-[10px] lg:px-60 md:px-[200px] items-center justify-center lg:flex-col lg:items-center lg:justify-center lg:py-16">
             <Header title="Clients" title2="Responses" />
             <div className="grid grid-cols-1 gap-6 py-10 lg:grid-cols-3 lg:px-4 lg:items-center lg:gap-11 lg:justify-center">
                 {testimonials.slice(0,6).map((project, index) => {
