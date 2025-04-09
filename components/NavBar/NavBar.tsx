@@ -1,12 +1,13 @@
 'use client';
 import { Menu } from 'lucide-react';
 import Link from 'next/link';
-import React from 'react';
+import React, {  } from 'react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet';
-import { usePathname } from 'next/navigation';
+import usePath from '@/app/hooks/usePath/usePath';
 
 function NavBar() {
-  const path = usePathname();
+  const { path, pathName  } = usePath();
+  console.log('Current path:', path);
 
   const linkStyles = `
     relative 
@@ -30,19 +31,7 @@ function NavBar() {
     after:duration-300 
     after:ease-in-out 
     hover:after:w-full
-    ${path === '#home' || path === '/#about' || path === '/#skills' || path === '/#projects' || path === '/#testimonials' || path === '/#contact' ? 'text-amber-50 after:w-full' : ''}
   `;
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    e.preventDefault();
-    const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  };
 
   return (
     <nav className="sticky top-0 z-50 flex flex-row items-center justify-between bg-inherit border-b border-gray-300 border-opacity-30 w-full px-5 py-5 md:px-20 lg:px-[100px] xl:px-[100px] 2xl:px-[296px]">
@@ -50,44 +39,44 @@ function NavBar() {
 
       <div className="hidden sm:flex flex-row gap-8">
         <Link
-          onClick={(e) => handleScroll(e, '#home')}
-          href="#home"
-          className={linkStyles}
+          onClick={()=> pathName('#home')}
+          href="/#home"
+          className={`${linkStyles} ${path === '#home' ? 'text-amber-50 after:w-full border-b-1 border-amber-50' : ''}`}
         >
           Home
         </Link>
         <Link
-          onClick={(e) => handleScroll(e, '#about')}
-          href="#about"
-          className={linkStyles}
+          onClick={() => pathName('#about')}
+          href="/#about"
+          className={`${linkStyles} ${path === '#about' ? 'text-amber-50 after:w-full border-b-1 border-amber-50' : ''}`}
         >
           About
         </Link>
         <Link
-          onClick={(e) => handleScroll(e, '#skills')}
-          href="#skills"
-          className={linkStyles}
+          onClick={() => pathName('#skills')}
+          href="/#skills"
+          className={`${linkStyles} ${path === '#skills' ? 'text-amber-50 after:w-full border-b-1 border-amber-50' : ''}`}
         >
           Skills
         </Link>
         <Link
-          onClick={(e) => handleScroll(e, '#projects')}
-          href="#projects"
-          className={linkStyles}
+          onClick={() => pathName('#projects')}
+          href="/#projects"
+          className={`${linkStyles} ${path === '#projects' ? 'text-amber-50 after:w-full border-b-1 border-amber-50' : ''}`}
         >
           Projects
         </Link>
         <Link
-          onClick={(e) => handleScroll(e, '#testimonials')}
-          href="#testimonials"
-          className={linkStyles}
+          onClick={() => pathName('#testimonials')}
+          href="/#testimonials"
+          className={`${linkStyles} ${path === '#testimonials' ? 'text-amber-50 after:w-full border-b-1 border-amber-50' : ''}`}
         >
           Testimonials
         </Link>
         <Link
-          onClick={(e) => handleScroll(e, '#contact')}
-          href="#contact"
-          className={linkStyles}
+          onClick={() => pathName('#home')}
+          href="/#contact"
+          className={`${linkStyles} ${path === '/#contact' ? 'text-amber-50 after:w-full border-b-1 border-amber-50' : ''}`}
         >
           Contact
         </Link>
@@ -104,48 +93,42 @@ function NavBar() {
             </SheetHeader>
             <div className="flex flex-col px-4 gap-5 mt-6">
               <Link
-                onClick={(e) => handleScroll(e, '#home')}
-                href="#home"
-                className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out hover:bg-gray-800 hover:text-amber-50 ${path === '#home' ? 'text-amber-50 bg-gray-800' : 'text-gray-200'
+                href="/#home"
+                className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out hover:bg-gray-800 hover:text-amber-50 ${path === '/#home' ? 'text-amber-50 bg-gray-800' : 'text-gray-200'
                   }`}
               >
                 Home
               </Link>
               <Link
-                onClick={(e) => handleScroll(e, '#about')}
-                href="#about"
+                href="/#about"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out hover:bg-gray-800 hover:text-amber-50 ${path === '/#about' ? 'text-amber-50 bg-gray-800' : 'text-gray-200'
                   }`}
               >
                 About
               </Link>
               <Link
-                onClick={(e) => handleScroll(e, '#skills')}
-                href="#skills"
+                href="/#skills"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out hover:bg-gray-800 hover:text-amber-50 ${path === '/#skills' ? 'text-amber-50 bg-gray-800' : 'text-gray-200'
                   }`}
               >
                 Skills
               </Link>
               <Link
-                onClick={(e) => handleScroll(e, '#projects')}
-                href="#projects"
+                href="/#projects"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out hover:bg-gray-800 hover:text-amber-50 ${path === '/#projects' ? 'text-amber-50 bg-gray-800' : 'text-gray-200'
                   }`}
               >
                 Projects
               </Link>
               <Link
-                onClick={(e) => handleScroll(e, '#testimonials')}
-                href="#testimonials"
+                href="/#testimonials"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out hover:bg-gray-800 hover:text-amber-50 ${path === '/#testimonials' ? 'text-amber-50 bg-gray-800' : 'text-gray-200'
                   }`}
               >
                 Testimonials
               </Link>
               <Link
-                onClick={(e) => handleScroll(e, '#contact')}
-                href="#contact"
+                href="/#contact"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out hover:bg-gray-800 hover:text-amber-50 ${path === '/#contact' ? 'text-amber-50 bg-gray-800' : 'text-gray-200'
                   }`}
               >
