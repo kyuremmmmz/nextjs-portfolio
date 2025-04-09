@@ -8,11 +8,11 @@ import Me1 from '../Svgs/Me1';
 function HomeSection() {
     const { downLoadCv } = DownloadCv();
     return (
-        <div className="flex flex-col-reverse justify-center items-center md:flex-row md:items-start md:gap-[210px] md:px-[40px] md:pl-[40px] w-full">
+        <div className="flex flex-col-reverse justify-center items-center md:flex-row md:items-start md:gap-[210px] md:px-[40px] md:pl-[40px] xl:gap-[100px] 2xl:gap-[210px] xl:px-[100px] w-full">
             <div data-aos="fade-right" data-aos-duration="4000" className="flex flex-col flex-grow">
                 <h1 className="text-center md:text-start text-[40px] md:text-[96px] font-bold">HEY THERE, IT&apos;S</h1>
                 <div className="w-full md:w-[700px] min-h-[96px]">
-                    <h1 className="text-center md:text-start text-[30px] text-[#00ADB5] md:text-[96px] font-bold">
+                    <h1 className="text-center md:text-start text-[30px] text-[#00ADB5] lg:text-[96px] font-bold">
                         <TypeAnimation
                             sequence={[
                                 'TIAN.DEV',
@@ -44,7 +44,7 @@ function HomeSection() {
                 </div>
             </div>
             <div data-aos="fade-left" className="relative w-[450px] h-[450px] rounded-full p-2 flex items-center justify-center flex-shrink-0 md:order-last sm:items-center sm:justify-center">
-                <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute inset-0 mt-10 xl:mx-10 flex items-center justify-center">
                     <Me1/>
                 </div>
             </div>

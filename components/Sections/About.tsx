@@ -10,8 +10,8 @@ import { faFacebook, faGithub, faGoogle, faInstagram, faLinkedin } from '@fortaw
 function About() {
     useAOS();
     return (
-        <section id="about" className="flex flex-col py-10 px-24 items-center lg:flex-row lg:py-32">
-            <div data-aos="fade-right" className="flex flex-col px-[20px] lg:px-60">
+        <section id="about" className="flex flex-col py-10  items-center lg:px-[20px] lg:flex-row lg:gap-16 lg:justify-center lg:py-32 lg:w-full 2xl:px-60 2xl:gap-16">
+            <div data-aos="fade-right" className="flex flex-col px-[20px] lg:px-[25px] 2xl:px-[200px]">
                 <div className="flex flex-row gap-2 lg:gap-8">
                     <div className="flex flex-col gap-2 lg:gap-8">
                         <Music/>

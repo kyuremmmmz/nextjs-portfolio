@@ -26,43 +26,58 @@ function NavBar() {
     after:w-0 
     hover:after:w-full
   `;
-
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   return (
-    <nav className="sticky top-0 z-50 flex flex-row items-center justify-between bg-inherit border-b border-gray-300 border-opacity-30 w-full px-5 py-5 md:px-20 lg:px-[296px]">
+    <nav className="sticky top-0 z-50 flex flex-row items-center justify-between bg-inherit border-b border-gray-300 border-opacity-30 w-full px-5 py-5 md:px-20 lg:px-[100px]">
       <h1 className="font-bold text-[24px]">CDBJ</h1>
 
       <div className="hidden sm:flex flex-row gap-8">
         <Link
-          href="/"
-          className={`${linkStyles} ${path === '/' ? 'text-amber-50 after:w-full' : 'text-gray-200'}`}
+          onClick={(e)=>handleScroll(e, '#home')}
+          href="#home"
+          className={`${linkStyles} ${path === '#home' ? 'text-amber-50 after:w-full' : 'text-gray-200'}`}
         >
           Home
         </Link>
         <Link
+          onClick={(e)=>handleScroll(e, '#about')}
           href="#about"
           className={`${linkStyles} ${path === '/#about' ? 'text-amber-50 after:w-full' : 'text-gray-200'}`}
         >
           About
         </Link>
         <Link
+          onClick={(e)=>handleScroll(e, '#skills')}
           href="#skills"
           className={`${linkStyles} ${path === '/#skills' ? 'text-amber-50 after:w-full' : 'text-gray-200'}`}
         >
           Skills
         </Link>
         <Link
+          onClick={(e)=>handleScroll(e, '#projects')}
           href="#projects"
           className={`${linkStyles} ${path === '/#projects' ? 'text-amber-50 after:w-full' : 'text-gray-200'}`}
         >
           Projects
         </Link>
         <Link
+          onClick={(e) => handleScroll(e, '#testimonials')}
           href="#testimonials"
           className={`${linkStyles} ${path === '/#testimonials' ? 'text-amber-50 after:w-full' : 'text-gray-200'}`}
         >
           Testimonials
         </Link>
         <Link
+          onClick={(e)=>handleScroll(e, '#about')}
           href="#contact"
           className={`${linkStyles} ${path === '/#contact' ? 'text-amber-50 after:w-full' : 'text-gray-200'}`}
         >
@@ -70,7 +85,6 @@ function NavBar() {
         </Link>
       </div>
 
-      {/* Mobile Navigation */}
       <div className="lg:hidden">
         <Sheet>
           <SheetTrigger>
@@ -82,7 +96,8 @@ function NavBar() {
             </SheetHeader>
             <div className="flex flex-col px-4 gap-5 mt-6">
               <Link
-                href="/"
+                onClick = {(e)=> handleScroll(e, '#home')}
+                href="#home"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out
                   hover:bg-gray-800 hover:text-amber-50
                   ${path === '/' ? 'text-amber-50 bg-gray-800' : 'text-gray-200'}`}
@@ -90,6 +105,7 @@ function NavBar() {
                 Home
               </Link>
               <Link
+                onClick = {(e)=> handleScroll(e, '#about')}
                 href="#about"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out
                   hover:bg-gray-800 hover:text-amber-50
@@ -98,6 +114,7 @@ function NavBar() {
                 About
               </Link>
               <Link
+                onClick = {(e)=> handleScroll(e, '#skills')}
                 href="#skills"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out
                   hover:bg-gray-800 hover:text-amber-50
@@ -106,6 +123,7 @@ function NavBar() {
                 Skills
               </Link>
               <Link
+                onClick = {(e)=> handleScroll(e, '#projects')}
                 href="#projects"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out
                   hover:bg-gray-800 hover:text-amber-50
@@ -114,6 +132,7 @@ function NavBar() {
                 Projects
               </Link>
               <Link
+                onClick = {(e)=> handleScroll(e, '#testimonials')}
                 href="#testimonials"
                 className={`w-full py-2 text-left rounded-md transition-all duration-300 ease-in-out
                   hover:bg-gray-800 hover:text-amber-50

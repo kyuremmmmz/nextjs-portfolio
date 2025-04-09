@@ -1,4 +1,4 @@
-"use client"; // Mark as Client Component due to useState and useSheets
+"use client";
 
 import useSheets from '@/app/hooks/useSheets/useSheets';
 import React, { useState } from 'react';

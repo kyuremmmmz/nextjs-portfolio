@@ -5,7 +5,7 @@ import SkillsBadge from '../Badge/Skills'
 
 function Skills() {
   return (
-    <section id="about" className="flex flex-col py-10 px-24 items-center justify-center lg:flex-col lg:items-center lg:justify-center lg:py-16">
+    <section id="skills" className="flex flex-col py-10 px-24 items-center justify-center lg:flex-col lg:items-center lg:justify-center lg:py-16">
             <div data-aos="fade-right" className="flex flex-col px-[20px] lg:px-60">
                 <div className="flex flex-row gap-2 lg:gap-8">
                     <div className="flex flex-col gap-2 lg:gap-8">

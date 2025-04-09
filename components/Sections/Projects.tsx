@@ -10,9 +10,9 @@ export default function Projects() {
     const projects = ProjectsKo;
     const router = useRouter();
   return (
-      <section id="about" className="flex flex-col py-10 px-[10px] lg:px-60 md:px-[200px] items-center justify-center lg:flex-col lg:items-center lg:justify-center lg:py-16">
+      <section id="projects" className="flex flex-col py-10 px-[10px] lg:px-[100px] md:px-[200px] items-center justify-center lg:flex-col lg:items-center lg:justify-center 2xl:px-60 lg:py-16">
           <Header title="My" title2="Projects"/>
-          <div className=' grid grid-cols-1 gap-6 py-10 lg:grid-cols-2 lg:px-4 lg:items-center  lg:gap-11 lg:justify-center'>
+          <div className=' grid grid-cols-1 gap-6 py-10 px-[20px] lg:grid-cols-2 lg:px-4 lg:items-center  lg:gap-11 lg:justify-center'>
               {projects.map((project, index) => (
                   <div onClick={() => {
                       router.push(project.github);
@@ -20,7 +20,7 @@ export default function Projects() {
                       <div className='flex flex-col gap-2 lg:gap-8'>
                           <div className='flex flex-col gap-2 lg:gap-8'>
                               <div className=' w-full h-full overflow-hidden'>
-                                  <Image src={project.image} className='w-full h-[150px] lg:h-[400px]'  width={0} height={0} alt={''}/>
+                                  <Image src={project.image} className='w-full h-[200px] lg:h-[400px]'  width={0} height={0} alt={''}/>
                               </div>
                               <div className='flex flex-col gap-2 lg:gap-2 lg:px-10 px-3'>
                                   <h1 className="lg:text-start text-[16px] md:text-start lg:text-[20px] md:text-[20px] font-bold">{project.title}</h1>
