@@ -8,7 +8,7 @@ import Me1 from '../Svgs/Me1';
 function HomeSection() {
     const { downLoadCv } = DownloadCv();
     return (
-        <div className="flex flex-col-reverse justify-center items-center md:flex-row md:items-start md:gap-[210px] md:px-[40px] md:pl-[40px] xl:gap-[100px] 2xl:gap-[210px] xl:px-[100px] w-full">
+        <div className="flex flex-col-reverse justify-center items-center md:flex-row md:items-start md:gap-[210px] md:px-[40px] md:pl-[40px] xl:gap-[100px] 2xl:gap-[210px]  w-full">
             <div data-aos="fade-right" data-aos-duration="4000" className="flex flex-col flex-grow">
                 <h1 className="text-center md:text-start text-[40px] md:text-[96px] font-bold">HEY THERE, IT&apos;S</h1>
                 <div className="w-full md:w-[700px] min-h-[96px]">

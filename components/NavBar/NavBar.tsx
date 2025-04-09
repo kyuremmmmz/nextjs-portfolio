@@ -37,7 +37,7 @@ function NavBar() {
     }
   };
   return (
-    <nav className="sticky top-0 z-50 flex flex-row items-center justify-between bg-inherit border-b border-gray-300 border-opacity-30 w-full px-5 py-5 md:px-20 lg:px-[100px]">
+    <nav className="sticky top-0 z-50 flex flex-row items-center justify-between bg-inherit border-b border-gray-300 border-opacity-30 w-full px-5 py-5 md:px-20 lg:px-[100px] xl:px-[100px] 2xl:px-[296px]">
       <h1 className="font-bold text-[24px]">CDBJ</h1>
 
       <div className="hidden sm:flex flex-row gap-8">
