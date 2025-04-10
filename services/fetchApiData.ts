@@ -2,7 +2,7 @@ let hasLogged = false;
 
 export default async function fetchApiData() {
     try {
-        const fetchData = await fetch('https://express-sheets-3.onrender.com/api/getResponses', {
+        const fetchData = await fetch('https://response-hkvi.onrender.com/api/getResponses', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8',

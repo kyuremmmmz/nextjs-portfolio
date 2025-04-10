@@ -1,7 +1,7 @@
 import { Mailer } from "@/types/Mailer";
 
 export default async function sendMail({clientEmail, message, clientName}: Mailer) {
-    const response = await fetch('https://express-sheets-3.onrender.com/api/sendMail', {
+    const response = await fetch('https://response-hkvi.onrender.com/api/sendMail', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json; charset=UTF-8',
