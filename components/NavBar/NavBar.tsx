@@ -76,7 +76,7 @@ function NavBar() {
         <Link
           onClick={() => pathName('#contact')}
           href="/#contact"
-          className={`${linkStyles} ${path === '/#contact' ? 'text-amber-50 after:w-full border-b-1 border-amber-50' : ''}`}
+          className={`${linkStyles} ${path === '#contact' ? 'text-amber-50 after:w-full border-b-1 border-amber-50' : ''}`}
         >
           Contact
         </Link>
