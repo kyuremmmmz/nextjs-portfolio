@@ -3,7 +3,7 @@ import React from 'react'
 function Contact() {
   return (
       <div>
-          <svg width="453" height="365" viewBox="0 0 453 365" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className='hidden lg:block' width="453" height="365" viewBox="0 0 453 365" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="276" cy="353" rx="95" ry="12" fill="black" fillOpacity="0.5" />
               <rect x="315.196" y="255.056" width="45.0309" height="92.9437" rx="3.51536" fill="#00ADB5" stroke="black" strokeWidth="1.64486" strokeLinejoin="round" />
               <rect x="197.395" y="281.895" width="45.0309" height="66.1053" rx="3.51536" fill="#EEEEEE" stroke="black" strokeWidth="1.64486" strokeLinejoin="round" />
